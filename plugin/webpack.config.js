@@ -75,4 +75,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports.optimization = {
     minimize : false
   };
+  module.exports.externals = {
+      '@vue/composition-api': 'commonjs2 @vue/composition-api'
+  }
 }
